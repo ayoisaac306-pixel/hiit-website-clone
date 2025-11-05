@@ -1,0 +1,182 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+   --Gray: hsl(273, 4%, 51%);
+   --White: hsl(0, 0%, 98%);
+   --dark-blue: hsl(240, 100%, 27%);
+}
+body{
+    font-family: "Inter", sans-serif;
+   
+}
+.header{
+    background: var(--White);
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 80;
+}
+.nav-img{
+    display: none;
+}
+.header img{
+    display: block;
+    width: 150px;
+    margin-left: 5rem;
+}
+.nav ul{
+    margin-right: 5rem;
+}
+.nav ul li{
+    display: inline;
+    margin-left: 15px;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: var(--Gray);
+    transition: color 0.5s ease;
+}
+.nav ul li a:hover{
+    color: orangered;
+}
+.header-line{
+    width: 90%;
+    margin: 10px auto;
+    text-align: center;
+}
+h3{
+    margin-left: 5rem;
+}
+.line{
+    width: 80px;
+    height: 1.5px;
+    background: orangered;
+    margin-left: 5rem;
+    margin-top: .3rem;
+}
+.section-1{
+    height: 300px;
+    background-image: url(./assets/images/pexels-photo-7193777.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center ;
+    margin: 1rem 0;
+}
+.second-section{
+    margin: 2rem 0;
+}
+.second-section h2{
+    text-align: center;
+    font-weight: 350;
+    font-size: 30px;
+    margin-bottom: 2rem;
+}
+.card{
+    width: 55%;
+    margin: 2rem 0rem;
+    display: flex;
+    margin-bottom: 5rem;
+}
+.card div{
+    flex: 1;
+}
+.card-1 h3{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+.card-1-line{
+    width: 80px;
+    height: 2px;
+    background: orangered;
+    margin-left: 5rem;
+    margin-bottom: 1.5rem;
+}
+.card-1 img{
+    width: 200px;
+    height: 300px;
+    margin-left: 5rem;
+}
+.card-2 h3{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+.card-2-line{
+    width: 80px;
+    height: 2px;
+    background: orangered;
+    margin-left: 5rem;
+    margin-bottom: 1.5rem;
+}
+.card-2 img{
+    width: 200px;
+    height: 300px;
+    margin-left: 5rem;
+}.footer{
+    background: hsl(0, 0%, 98%);
+    background-image: url(./assets/images/bg-pattern-footer-desktop.svg);
+    background-repeat: no-repeat;
+}
+.footer-wrapper{
+    width: 60%;
+    display: flex;
+    flex: 1;
+    gap: 1rem;
+    padding: 1rem 5rem;
+}
+.abj-card i{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.abj-card p{
+    text-align: center;
+}
+.first-card hr{
+    margin: 15px 0;
+}
+.lekki-card p{
+    text-align: center;
+}
+.ikeja-card i{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.ikeja-card p{
+    text-align: center;
+}
+.second-card hr{
+    margin: 15px 0;
+}
+.kano-card{
+    text-align: center;
+}
+.contact-card i{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.contact-card p{
+    padding-bottom: 15px;
+    text-align: center;
+}
+.socials a{
+    text-decoration: none;
+}
+.socials a i{
+    display: inline;
+    position: relative;
+}
+.third-card{
+    margin-left: 1rem;
+}

@@ -1,0 +1,201 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+   --Gray: hsl(273, 4%, 51%);
+   --White: hsl(0, 0%, 98%);
+   --dark-blue: hsl(240, 100%, 27%);
+}
+body{
+    font-family: "Inter", sans-serif;
+   
+}
+.header{
+    background: var(--White);
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 80;
+}
+.nav-img{
+    display: none;
+}
+.header img{
+    display: block;
+    width: 150px;
+    margin-left: 5rem;
+}
+.nav ul{
+    margin-right: 5rem;
+}
+.nav ul li{
+    display: inline;
+    margin-left: 15px;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: var(--Gray);
+    transition: color 0.5s ease;
+}
+.nav ul li a:hover{
+    color: orangered;
+}
+.header-line{
+    width: 90%;
+    margin: 10px auto;
+    text-align: center;
+}
+h3{
+    margin-left: 5rem;
+}
+.line{
+    width: 80px;
+    height: 1.5px;
+    background: orangered;
+    margin-left: 5rem;
+    margin-top: .3rem;
+}
+.section-1{
+    width: 90%;
+    margin: 1rem auto;
+    display: flex;
+    gap: 2rem;
+}
+.section-1 > div {
+    flex: 1;
+}
+.card-1-top{
+    background: var(--dark-blue);
+}
+.card-1-top h2{
+    text-align: center;
+    color: var(--White);
+}
+.card-1 h4{
+    margin-top: 2rem;
+    color: var(--dark-blue);
+}
+.card-1 p{
+    margin-top: 2rem;
+    color: hsl(0, 0%, 9%);
+    font-size: 16px;
+    font-weight: 200;
+    width: 100%;
+    line-height: 1.5rem;
+}
+.card-1 hr{
+    margin-top: 15px ;
+}
+.card-2-top{
+    background: var(--dark-blue);
+}
+.card-2-top h2{
+    text-align: center;
+    color: var(--White);
+}
+.card-2 form{
+    width: 90%;
+    margin: 30px 0;
+    border: solid black 1px;
+    border-radius: 10px;
+    padding: 20px;
+}
+.card-2 form h2{
+    font-weight: 350;
+    font-size: 30px;
+    margin-bottom: 1rem;
+}
+.card-2 form h4{
+    margin: 1rem 0;
+    font-weight: 400;
+}
+.card-2 form input{
+    width: 100%;
+    padding: 8px 4px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1rem;
+}
+.card-2 button{
+    padding: .8rem 1.5rem;
+    border: none;
+    border-radius: 7px;
+    background: hsl(241, 70%, 52%);
+    color: var(--White);
+    cursor: pointer;
+}
+.card-2 button:hover{
+    background: hsl(241, 64%, 53%);
+}
+.card-3{
+    background-image: url(./assets/images/Interested-in-doing-your-siwes-with-usHiiT-Siwes-1.jpg);
+    background-repeat: no-repeat;
+}
+.footer{
+    background: hsl(0, 0%, 98%);
+    background-image: url(./assets/images/bg-pattern-footer-desktop.svg);
+    background-repeat: no-repeat;
+}
+.footer-wrapper{
+    width: 60%;
+    display: flex;
+    flex: 1;
+    gap: 1rem;
+    padding: 1rem 5rem;
+}
+.abj-card i{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.abj-card p{
+    text-align: center;
+}
+.first-card hr{
+    margin: 15px 0;
+}
+.lekki-card p{
+    text-align: center;
+}
+.ikeja-card i{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.ikeja-card p{
+    text-align: center;
+}
+.second-card hr{
+    margin: 15px 0;
+}
+.kano-card{
+    text-align: center;
+}
+.contact-card i{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.contact-card p{
+    padding-bottom: 15px;
+    text-align: center;
+}
+.socials a{
+    text-decoration: none;
+}
+.socials a i{
+    display: inline;
+    position: relative;
+}
+.third-card{
+    margin-left: 1rem;
+}

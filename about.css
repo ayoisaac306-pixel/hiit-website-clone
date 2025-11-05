@@ -1,0 +1,274 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+   --Gray: hsl(273, 4%, 51%);
+   --White: hsl(0, 0%, 98%);
+   --dark-blue: hsl(240, 100%, 27%);
+}
+body{
+    font-family: "Inter", sans-serif;
+   
+}
+.header{
+    background: var(--White);
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 80;
+}
+.nav-img{
+    display: none;
+}
+.header img{
+    display: block;
+    width: 150px;
+    margin-left: 5rem;
+}
+.nav ul{
+    margin-right: 5rem;
+}
+.nav ul li{
+    display: inline;
+    margin-left: 15px;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: var(--Gray);
+     transition: color 0.5s ease;
+}
+.nav ul li a:hover{
+    color: orangered;
+}
+.header-line{
+    width: 90%;
+    margin: 10px auto;
+    text-align: center;
+}
+h3{
+    margin-left: 5rem;
+}
+.line{
+    width: 80px;
+    height: 1.5px;
+    background: orangered;
+    margin-left: 5rem;
+    margin-top: .3rem;
+}
+.section-1{
+    height: 500px;
+    margin-top: 2rem;
+    background-image: url(./assets/images/Group-Picture-1-e1591261159105.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.section-1-down{
+    width: 55%;
+    margin: 4rem 7rem;
+    animation: scrolling linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+}
+@keyframes scrolling{
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+.section-1-down h2{
+    color: hsl(240, 100%, 27%);
+    font-weight: 250;
+    font-size: 35px;
+    margin-bottom: 1rem;
+}
+.section-1-down p{
+    color: hsl(273, 4%, 20%);
+    font-size: 18px;
+    font-weight: 200;
+    width: 100%;
+    line-height: 1.5rem;
+}
+.btn-1{
+    margin: 2rem 0;
+    background: inherit;
+    padding: 1rem 2.5rem;
+    border: solid hsl(240, 100%, 27%);
+    color:hsl(240, 100%, 27%);
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+.btn-1:hover{
+    background: hsl(240, 100%, 27%);
+    color: white;
+}
+.section-2{
+    width: 90%;
+    margin: 2rem auto;
+    display: flex;
+    flex: 1;
+    gap: 1.5rem;
+    margin-bottom: 5rem;
+}
+.card-1{
+    background: hsl(35, 40%, 96%);
+     animation: view linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+}
+.card-1 h2{
+    color: hsl(240, 100%, 27%);
+    font-weight: 350;
+    font-size: 30px;
+    margin-bottom: 1rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+.card-1 p{
+    color: hsl(273, 4%, 20%);
+    font-size: 18px;
+    font-weight: 200;
+    width: 100%;
+    line-height: 1.5rem;
+}
+.card-2{
+    background: hsl(35, 40%, 96%);
+    animation: view linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+}
+.card-2 h2{
+    color: hsl(240, 100%, 27%);
+    font-weight: 350;
+    font-size: 30px;
+    margin-bottom: 1rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+.card-2 p{
+    color: hsl(273, 4%, 20%);
+    font-size: 18px;
+    font-weight: 200;
+    width: 100%;
+    line-height: 1.5rem;
+}
+.card-3{
+    background: hsl(35, 40%, 96%);
+    animation: view linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+}
+.card-3 h2{
+    color: hsl(240, 100%, 27%);
+    font-weight: 350;
+    font-size: 30px;
+    margin-bottom: 1rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+.card-3 p{
+    color: hsl(273, 4%, 20%);
+    font-size: 18px;
+    font-weight: 200;
+    width: 100%;
+    line-height: 1.5rem;
+}
+.card-4{
+    background: hsl(35, 40%, 96%);
+    animation: view linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+}
+@keyframes view{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.card-4 h2{
+    color: hsl(240, 100%, 27%);
+    font-weight: 350;
+    font-size: 30px;
+    margin-bottom: 1rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+.card-4 p{
+    color: hsl(273, 4%, 20%);
+    font-size: 18px;
+    font-weight: 200;
+    width: 100%;
+    line-height: 1.5rem;
+}
+.footer{
+    background: hsl(0, 0%, 98%);
+    background-image: url(./assets/images/bg-pattern-footer-desktop.svg);
+    background-repeat: no-repeat;
+}
+.footer-wrapper{
+    width: 60%;
+    display: flex;
+    flex: 1;
+    gap: 1rem;
+    padding: 1rem 5rem;
+}
+.abj-card i{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.abj-card p{
+    text-align: center;
+}
+.first-card hr{
+    margin: 15px 0;
+}
+.lekki-card p{
+    text-align: center;
+}
+.ikeja-card i{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.ikeja-card p{
+    text-align: center;
+}
+.second-card hr{
+    margin: 15px 0;
+}
+.kano-card{
+    text-align: center;
+}
+.contact-card i{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.contact-card p{
+    padding-bottom: 15px;
+    text-align: center;
+}
+.socials a{
+    text-decoration: none;
+}
+.socials a i{
+    display: inline;
+    position: relative;
+}
+.third-card{
+    margin-left: 1rem;
+}
