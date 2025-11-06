@@ -180,3 +180,113 @@ h3{
 .third-card{
     margin-left: 1rem;
 }
+/* ===================== */
+/* === RESPONSIVENESS === */
+/* ===================== */
+
+/* For tablets (max width 1024px) */
+@media (max-width: 1024px) {
+  .section-1 {
+    flex-direction: column;
+  }
+
+  .footer-wrapper {
+    flex-direction: column;
+    width: 90%;
+    padding: 1rem 2rem;
+  }
+
+  .header img {
+    margin-left: 2rem;
+  }
+
+  .nav ul {
+    margin-right: 2rem;
+  }
+}
+
+/* For mobile screens (max width 768px) */
+@media (max-width: 768px) {
+  .header {
+    padding: 10px 20px;
+  }
+
+  .nav-img {
+    display: block;
+    margin-right: 1.5rem;
+    cursor: pointer;
+  }
+
+  .nav {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+    padding: 1rem 0;
+  }
+
+  .nav ul li {
+    margin: 15px 0;
+  }
+
+  /* Toggle menu when active */
+  .nav.active {
+    display: block;
+  }
+
+  .section-1 {
+    flex-direction: column;
+    width: 95%;
+  }
+
+  h3,
+  .line {
+    margin-left: 2rem;
+  }
+
+  .footer-wrapper {
+    flex-direction: column;
+    width: 95%;
+    padding: 1rem;
+  }
+
+  .card-3 {
+    height: 250px;
+    background-size: cover;
+  }
+}
+
+/* For very small phones (max width 480px) */
+@media (max-width: 480px) {
+  .header img {
+    width: 120px;
+    margin-left: 1rem;
+  }
+
+  .card-2 form {
+    padding: 15px;
+  }
+
+  .card-2 button {
+    width: 100%;
+  }
+
+  .footer-wrapper {
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+}

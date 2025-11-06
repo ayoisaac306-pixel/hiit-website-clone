@@ -272,3 +272,101 @@ h3{
 .third-card{
     margin-left: 1rem;
 }
+/* ====== RESPONSIVE DESIGN ====== */
+@media (max-width: 1024px) {
+  .section-1-down {
+    width: 80%;
+    margin: 3rem auto;
+  }
+  .footer-wrapper {
+    width: 90%;
+    flex-wrap: wrap;
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header img {
+    width: 120px;
+    margin-left: 2rem;
+  }
+
+  .nav-img {
+    display: block;
+    cursor: pointer;
+    margin-right: 2rem;
+  }
+
+  .nav-img img {
+    width: 25px; /* smaller hamburger size */
+    height: auto;
+  }
+
+  .nav {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 60%;
+    background: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: right;
+  }
+
+  .nav.active {
+    display: block;
+  }
+
+  .nav ul {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 0;
+  }
+
+  .nav ul li {
+    display: block;
+    margin: 1rem 0;
+  }
+
+  .nav ul li a {
+    color: var(--dark-blue);
+    font-weight: 500;
+  }
+
+  .section-2 {
+    flex-direction: column;
+    width: 90%;
+    gap: 2rem;
+  }
+
+  .footer-wrapper {
+    flex-direction: column;
+    width: 90%;
+    padding: 2rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h3 {
+    margin-left: 2rem;
+  }
+
+  .line {
+    margin-left: 2rem;
+  }
+
+  .section-1-down {
+    width: 90%;
+    margin: 2rem auto;
+  }
+
+  .btn-1 {
+    padding: 0.8rem 2rem;
+  }
+
+  .nav {
+    width: 80%;
+  }
+}
