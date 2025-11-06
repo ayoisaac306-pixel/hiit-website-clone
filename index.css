@@ -279,3 +279,125 @@ body{
 .third-card{
     margin-left: 1rem;
 }
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .header img {
+    margin-left: 2rem;
+    width: 130px;
+  }
+
+  .nav ul {
+    margin-right: 2rem;
+  }
+
+  .section-1 h1 {
+    font-size: 50px;
+  }
+
+  .service-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-1, .card-2 {
+    width: 80%;
+  }
+
+  .footer-wrapper {
+    width: 90%;
+    flex-direction: column;
+    padding: 2rem;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .header {
+    padding: 10px 20px;
+  }
+
+  .nav-img {
+    display: block;
+    margin-right: 2rem;
+    cursor: pointer;
+    z-index: 100;
+  }
+
+  .nav {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background: white;
+    width: 100%;
+    text-align: center;
+    display: none;
+    border-top: 1px solid #ddd;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  }
+
+  .nav.active {
+    display: block;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    margin: 0;
+    padding: 10px 0;
+  }
+
+  .nav ul li {
+    display: block;
+    margin: 15px 0;
+  }
+
+  .section-1 {
+    height: 300px;
+  }
+
+  .section-1 h1 {
+    font-size: 32px;
+    padding-top: 70px;
+  }
+
+  .btn {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn-1, .btn-2 {
+    width: 80%;
+  }
+
+  .service-card {
+    flex-direction: column;
+  }
+
+  .card-1, .card-2 {
+    width: 90%;
+  }
+
+  .footer-wrapper {
+    width: 95%;
+    flex-direction: column;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-1 h1 {
+    font-size: 26px;
+  }
+
+  .btn-1, .btn-2 {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .card-1-up h3,
+  .card-1-down h3,
+  .card-2-up h3,
+  .card-2-down h3 {
+    font-size: 22px;
+  }
+}
